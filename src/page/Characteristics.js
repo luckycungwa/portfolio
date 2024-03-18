@@ -8,6 +8,7 @@ const Characteristics = () => {
           <h1>SOFT SKILLS</h1>
           {/* navigation bar */}
         </div>
+        <div><p>NAVIGATION BAR</p></div>
         <div className="skills-section">
           {/* Background lines */}
           <div className="top-border" />
@@ -62,9 +63,7 @@ const Characteristics = () => {
             </div>
           </div>
           <div className="bottom-border" />
-        </div>
-        <div>
-          <p>
+          <p className="sub-text">
             My journey takes an intriguing turn as I seamlessly blend the world
             of artistry with the precision of technology. With my background in
             graphic design, I bring an artist's eye to the digital landscape.
@@ -75,8 +74,7 @@ const Characteristics = () => {
             expertise.
           </p>
         </div>
-
-        <div>
+        <div className="button-group">
           <button className="button">Get in touch</button>
           <button className="button">Get in touch</button>
         </div>

@@ -37,29 +37,67 @@
   }
 }
 
-/* HOME PAGE STYLES */
+/* ------------------------------- NAVIGATION BAR STYLES ------------------------------- */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+/* ------------------------------- HOME PAGE STYLES ------------------------------- */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+   height: 60px;
+  position: fixed;
+  z-index: 1;
+  background-color: #ff542f;
+  /* padding: 0 8px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-items {
+  /* display: flex; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+  margin: 0 8px,;
+  
+}
+
 .title {
   font-size: 144px;
   font-weight: 700;
   color: #2d2d2d;
   padding: 0;
-   margin: 0;
+  margin: 0;
   align-items: start;
 }
 .titleOutline {
   font-size: 144px;
   font-weight: 700;
-  color:  #2d2d2d;
+  color: #2d2d2d;
   letter-spacing: 4px;
- }
- .sub-title {
+}
+.sub-title {
   font-size: 18px;
   /* width: 50%; */
   flex-wrap: wrap;
- }
- .button {
+}
+.button {
   margin-top: 40px;
-  background-color: #FF542F;
+  background-color: #ff542f;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -67,17 +105,17 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  
- }
+  text-transform: capitalize;
+}
 
- /* layout */
- .container {
+/* ------------------------------- layout ------------------------------- */
+.container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
- }
- .intro-section {
+  justify-content: space-between;
+}
+.intro-section {
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -93,64 +131,118 @@
   padding-top: 40px;
   padding-bottom: 40px;
   width: 50%;
- }
- .about-section {
+}
+.about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
- }
- .image {
+}
+.image {
   width: 100%;
   height: 100%;
- }
- .experience-section {
+}
+.experience-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
- }
- .skills-section {
+}
+.skills-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
- }
- .portfolio-section {
+  /* margin-bottom: 10px; */
+}
+.portfolio-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
- }
+}
 
- /* general component styles */
- .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  height: 220px;
-  width: 300px;
-  border-radius: 16px;
-  background-color: #FF542F;
- }
-
- .card-container {
+.button-group {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 100px;
- }
+  /* margin: 16px; */
+  gap: 30px;
+}
 
- /* SOFT SKILLS STYLES */
- .skills-section {
+/* ------------------------------- general component styles -------------------------------*/
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24vh;
+  width: 18vw;
+  border-radius: 16px;
+  /* background-color: #FF542F; */
+  /* gap: 8px; */
+  position: relative;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 24px;
+  width: 80%;
+  
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  color: #efefef;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.card-blur {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  background: #000000;
+  background: -webkit-linear-gradient(0deg, #0d0d0dae 0%, #fdfdfd20 100%);
+  background: linear-gradient(0deg, #0d0d0dae 0%, #fdfdfd20 100%);
+  z-index: 1;
+}
+
+.card :hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+/*------------------------------- SOFT SKILLS STYLES -------------------------------*/
+.skills-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -158,8 +250,8 @@
   justify-content: center;
   margin-bottom: 10px;
   /* width: 60%; */
- }
- .skills-card-container {
+}
+.skills-card-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -173,27 +265,27 @@
   max-width: 42%;
   min-width: 40%;
   max-height: 80%;
- font-size: 13px;
- text-align: start;
- }
- .skills-container {
+  font-size: 13px;
+  text-align: start;
+}
+.skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  gap: 100px;
- }
-.skills-layout  {
+  /* gap: 50px; */
+}
+.skills-layout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
- /* background-color: #FF542F; */
- max-width: 80%;
+  /* background-color: #FF542F; */
+  max-width: 80%;
 }
 
- .skills-border {
+.skills-border {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -206,17 +298,17 @@
   background-color: #3d3d3d;
   color: aliceblue;
   /* top: 200px; */
- }
+}
 
- .top-border {
+.top-border {
   border-top: 4px solid #59ff2f;
   /* top: 25%; */
   align-items: center;
   justify-content: center;
   width: 70%;
   /* position: absolute; */
- }
- .mid-border {
+}
+.mid-border {
   border-top: 4px solid #e0e0e0;
   rotate: 90deg;
   align-items: center;
@@ -224,12 +316,23 @@
   align-self: center;
   /* width: rem; */
   width: max-content;
- }
- .bottom-border {
+}
+.bottom-border {
   border-top: 4px solid #2f5cff;
   bottom: 40%;
   align-items: center;
   justify-content: center;
   width: 70%;
   /* position: absolute; */
- }
+}
+
+.sub-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 32px;
+  width: 72%;
+}
