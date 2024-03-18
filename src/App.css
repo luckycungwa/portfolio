@@ -36,3 +36,200 @@
     transform: rotate(360deg);
   }
 }
+
+/* HOME PAGE STYLES */
+.title {
+  font-size: 144px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding: 0;
+   margin: 0;
+  align-items: start;
+}
+.titleOutline {
+  font-size: 144px;
+  font-weight: 700;
+  color:  #2d2d2d;
+  letter-spacing: 4px;
+ }
+ .sub-title {
+  font-size: 18px;
+  /* width: 50%; */
+  flex-wrap: wrap;
+ }
+ .button {
+  margin-top: 40px;
+  background-color: #FF542F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+ }
+
+ /* layout */
+ .container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+ }
+ .intro-section {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 10px;
+  white-space: pre-line;
+  background-color: antiquewhite;
+  flex-wrap: wrap;
+  line-height: normal;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 50%;
+ }
+ .about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+ .image {
+  width: 100%;
+  height: 100%;
+ }
+ .experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+ .skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+ }
+ .portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+
+ /* general component styles */
+ .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 220px;
+  width: 300px;
+  border-radius: 16px;
+  background-color: #FF542F;
+ }
+
+ .card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px;
+ }
+
+ /* SOFT SKILLS STYLES */
+ .skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* width: 60%; */
+ }
+ .skills-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  /* width: 25%; */
+  /* padding: 10px; */
+  /* background-color: #b27e7e; */
+  color: aliceblue;
+  margin: 16px;
+  max-width: 42%;
+  min-width: 40%;
+  max-height: 80%;
+ font-size: 13px;
+ text-align: start;
+ }
+ .skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 100px;
+ }
+.skills-layout  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+ /* background-color: #FF542F; */
+ max-width: 80%;
+}
+
+ .skills-border {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+  /* position: absolute; */
+  width: 70%;
+  height: 40%;
+  /* padding: 10px; */
+  background-color: #3d3d3d;
+  color: aliceblue;
+  /* top: 200px; */
+ }
+
+ .top-border {
+  border-top: 4px solid #59ff2f;
+  /* top: 25%; */
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  /* position: absolute; */
+ }
+ .mid-border {
+  border-top: 4px solid #e0e0e0;
+  rotate: 90deg;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  /* width: rem; */
+  width: max-content;
+ }
+ .bottom-border {
+  border-top: 4px solid #2f5cff;
+  bottom: 40%;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  /* position: absolute; */
+ }
