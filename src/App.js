@@ -27,10 +27,6 @@ function App() {
        {/* Error route */}
       {/* <Route path="*" element={Home} /> */}
     </Routes>
-
-      <div className="App">
-      
-    </div>
     </Router>
     
   );

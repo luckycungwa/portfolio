@@ -1,15 +1,17 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 const Characteristics = () => {
   return (
     <>
-      <div className="skills-container">
-        <div>
-          <h1>SOFT SKILLS</h1>
+      <div className="container">
+        <div className="page-header">
+          <h1 className="page-title">SOFT SKILLS</h1>
           {/* navigation bar */}
+          <Navbar />
         </div>
-        <div><p>NAVIGATION BAR</p></div>
-        <div className="skills-section">
+        
+        <div className="card-container">
           {/* Background lines */}
           <div className="top-border" />
           <div className="skills-border">
@@ -63,7 +65,7 @@ const Characteristics = () => {
             </div>
           </div>
           <div className="bottom-border" />
-          <p className="sub-text">
+          <p className="text">
             My journey takes an intriguing turn as I seamlessly blend the world
             of artistry with the precision of technology. With my background in
             graphic design, I bring an artist's eye to the digital landscape.
@@ -73,11 +75,12 @@ const Characteristics = () => {
             harmonious balance between artistic expression and technical
             expertise.
           </p>
-        </div>
-        <div className="button-group">
+          <div className="button-group">
           <button className="button">Get in touch</button>
           <button className="button">Get in touch</button>
         </div>
+        </div>
+        
       </div>
     </>
   );
