@@ -5,7 +5,8 @@ import Home from './page/Home';
 import About from './page/About';
 import Skills from './page/Skills';
 import Characteristics from './page/Characteristics';
-import Navbar from './components/Navbar';
+import Experience from './page/Experience';
+// import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/skills" element={<Skills />} />
     <Route path="/characteristics" element={<Characteristics />} />
+    <Route path="/experience" element={<Experience />} />
     
 
       {/* handle errors asile */}

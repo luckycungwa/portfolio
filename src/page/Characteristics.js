@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { FaArrowRight } from "react-icons/fa";
 
 const Characteristics = () => {
   return (
@@ -10,7 +11,7 @@ const Characteristics = () => {
           {/* navigation bar */}
           <Navbar />
         </div>
-        
+
         <div className="card-container">
           {/* Background lines */}
           <div className="top-border" />
@@ -20,25 +21,26 @@ const Characteristics = () => {
                 Passionately Blending Artistry with Precision in the World of
                 Design and Development
               </h3>
-              <p>
+              <p className="text">
                 I enjoy being part of a team, where ideas flow freely, and
                 collective creativity results in remarkable outcomes.
               </p>
             </div>
-            <div className="mid-border" />
+            <span className="mid-border" />
             <div className="skills-layout">
               <div className="skills-card-container">
                 <h3>Effective Communication</h3>
-                <p>
+                <p className="text">
                   In the ever-evolving world of technology, adaptability is a
                   crucial skill. I thrive in fast-paced environments, ready to
                   embrace new tools and methodologies to deliver outstanding
                   results.
                 </p>
               </div>
+
               <div className="skills-card-container">
                 <h3>Adaptability</h3>
-                <p>
+                <p className="text">
                   In the ever-evolving world of technology, adaptability is a
                   crucial skill. I thrive in fast-paced environments, ready to
                   embrace new tools and methodologies to deliver outstanding
@@ -47,8 +49,8 @@ const Characteristics = () => {
               </div>
               <div className="skills-card-container">
                 <h3>Problem-Solving</h3>
-                <p>
-                  EAs a developer and designer, problem-solving is second nature
+                <p className="text">
+                  As a developer and designer, problem-solving is second nature
                   to me. I enjoy the challenge of finding creative solutions to
                   complex issues, ensuring that projects run smoothly and
                   efficiently
@@ -56,7 +58,7 @@ const Characteristics = () => {
               </div>
               <div className="skills-card-container">
                 <h3>Time Management</h3>
-                <p>
+                <p className="text">
                   In the world of design and development, time management is
                   essential. I excel in organizing my work, meeting deadlines,
                   and ensuring that projects progress smoothly.
@@ -75,13 +77,17 @@ const Characteristics = () => {
             harmonious balance between artistic expression and technical
             expertise.
           </p>
-          <div className="button-group">
-          <button className="button">Get in touch</button>
-          <button className="button">Get in touch</button>
-        </div>
-        </div>
-        
+          {/* <div className="button-group">
+            <button className="button-outline">
+              Portfolio <FaArrowRight />
+            </button>
+            <button className="button-outline">
+              Let's Work <FaArrowRight />
+            </button>
+          </div> */}
+        </div><div />
       </div>
+      
     </>
   );
 };

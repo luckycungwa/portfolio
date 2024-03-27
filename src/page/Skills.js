@@ -1,6 +1,7 @@
 import React from "react";
-import { CardList } from "../components/CardList";
+// import { CardList } from "../components/CardList";
 import Navbar from "../components/Navbar";
+import { FaArrowRight } from "react-icons/fa";
 
 const Skills = () => {
   return (
@@ -11,8 +12,18 @@ const Skills = () => {
           {/* navigation bar */}
           <Navbar />
         </div>
-
         <div className="card-container">
+        <p className="sub-text">
+            In my technical toolbox, I wield a range of skills, including web
+            and mobile development, state management with Redux, seamless API
+            integration, responsive design, CSS-in-JS methodologies, and code
+            optimization for top-notch performance. I also embrace collaboration
+            tools like Git and agile methodologies to work effectively in teams.
+            
+          </p>
+          </div>
+        <div className="card-container">
+       
           <div className="card">
             <div className="card-blur" />
             <h2 className="card-header">WEB DEV.</h2>
@@ -36,23 +47,20 @@ const Skills = () => {
             <h2 className="card-header">DESIGNs</h2>
             <img src="/images/design.jpg" alt="web" className="card-image" />
           </div>
+          
           <p className="sub-text">
-            In my technical toolbox, I wield a range of skills, including web
-            and mobile development, state management with Redux, seamless API
-            integration, responsive design, CSS-in-JS methodologies, and code
-            optimization for top-notch performance. I also embrace collaboration
-            tools like Git and agile methodologies to work effectively in teams.
+            In this forever changing landscape, I am constantly seeking new opportunities to learn and grow. It would be a great opportunity to work with a team of like-minded individuals who share my passion for the tech industry.
+            
           </p>
+         
         </div>
-
-        <div className="button-group">
-          <button className="button" onClick={() => alert("074 264 9713")}>Call</button>
-          <button className="button" onClick={() => alert("cungwalucky@gmail.com")}>E-mail</button>
-          <button className="button" onClick={() => alert("Going to LinkedIn...")}>LinkedIn</button>
-          <button className="button" onClick={() => alert("Going to Git Hub...")}>  Github</button>
-          
-          
-        </div>
+        {/* <div className="button-group">
+          <button className="button-outline" onClick={}>
+            Portfolio <FaArrowRight />
+          </button>
+         
+        </div> */}
+        <div/>
       </div>
     </>
   );

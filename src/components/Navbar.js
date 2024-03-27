@@ -11,7 +11,7 @@ const Navbar = () => {
           <NavLink to="/about" activeStyle>About</NavLink>
           <NavLink to="/skills" activeStyle>Skills</NavLink>
           <NavLink to="/characteristics" activeStyle>Characteristics</NavLink>
-          <NavLink to="/experience" activeStyle>Experience</NavLink>
+          <NavLink to="/experience" activeStyle>Portfolio</NavLink>
         </NavMenu>
         
         {/* wrap button for mobile */}
